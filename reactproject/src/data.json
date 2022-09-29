@@ -1,0 +1,28 @@
+{
+  "Details": [
+    {
+      "user": "Crusher80",
+      "email": "crusher@gmail.com",
+      "password": "rhjehiorhuhiqk",
+      "id": 1
+    },
+    {
+      "user": "Eve",
+      "email": "eve.holt@reqres.in",
+      "password": "cityslicka",
+      "id": 2
+    },
+    {
+      "user": "eve.holt@reqres.in",
+      "email": "",
+      "password": "cityslicka",
+      "id": 3
+    },
+    {
+      "user": "eve.holt@reqres.in",
+      "email": "",
+      "password": "cityslicka",
+      "id": 4
+    }
+  ]
+}
