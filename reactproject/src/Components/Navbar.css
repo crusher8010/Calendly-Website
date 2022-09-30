@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.struct{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.sym img{
+    width: 200px;
+    height: 50px;
+}
+
+.nav-links1{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 90px;
+    align-items: center;
+}
+
+.sym img{
+    padding-left: 15px;
+}
+
+.sym, .Individuals, .Teams, .Enterprise, .Products, .Pricing, .Resources, .login, .Getstarted{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+.nav-links2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 90px;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    .sym img{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+
+    .nav-links1, .nav-links2{
+        display: none;
+    }
+
+    .mobile-nav-links1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        transition: all o.5s ease-out;
+        background-color: white;
+        width: 100%;
+    }
+
+    .mobile-nav-links2{
+        display: flex;
+        /* list-style: none; */
+        flex-direction: column;
+        position: absolute;
+        top: 374px;
+        left: 0;
+        transition: all o.5s ease-out;
+        background-color: white;
+        width: 100%;
+    }
+
+    .Individuals, .Teams, .Enterprise, .Products, .Pricing, .Resources, .login, .Getstarted{
+        text-align: center;
+        padding: 10px;
+        width: 90%;
+        margin: auto;
+        
+        transition: all 0.5s ease;
+        /* border: 1px solid; */
+        
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+}

@@ -1,79 +1,60 @@
 import { Link } from "react-router-dom";
+import {useState} from "react";
 import { Button} from "@chakra-ui/react";
 import { AuthContext } from "../Context/AuthContextProvider";
 import { useContext} from "react";
+import Dropdown1 from "./Dropdown1";
+import Dropdown2 from "./Dropdown2";
+import "./Navbar.css"
 
 function Navbar() {
   const { tok } = useContext(AuthContext);
-  console.log(tok);
+  const [mob, setMob] = useState(false);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-around",
-        height: "90px",
-        alignItems: "center",
-        position: "sticky",
-      }}
-    >
+    <nav className="struct">
       <div>
-        <Link to="/">
+        <Link className="sym" to="/">
           <img
-            style={{ width: "200px", height: "50px" }}
             src="https://assets.calendly.com/packs/authentication/media/logo-f885ef95906ef15bb6fb.png"
             alt="Calendly Icons"
           />
         </Link>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "40%",
-          height: "90px",
-          alignItems: "center",
-        }}
-      >
-        <Link to="/individuals">
+      <div className={mob ? "mobile-nav-links1":"nav-links1"} onClick={() => setMob(false)}>
+        <Link to="/individuals" className="Individuals">
           <b>Individuals</b>
         </Link>
-        <Link to="/teams">
+        <Link to="/teams" className="Teams">
           <b>Teams</b>
         </Link>
-        <Link>
+        <Link className="Enterprise">
           <b>Enterprise</b>
         </Link>
-        <Link>
-          <b>Product</b>
+        <Link className="Products">
+          <Dropdown1 />
         </Link>
-        <Link>
+        <Link className="Pricing">
           <b>Pricing</b>
         </Link>
-        <Link>
-          <b>Resources</b>
+        <Link className="Resources">
+          <Dropdown2 />
         </Link>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "20%",
-          height: "90px",
-          alignItems: "center",
-        }}
-      >
-        <Link to="/login">
+      <div className={mob ? "mobile-nav-links2":"nav-links2"} onClick={() => setMob(false)}>
+        <Link className="login" to="/login">
           <b>Log In</b>
         </Link>
-        <Link to="/signup">
+        <Link to="/signup" className="Getstarted">
           <Button colorScheme="blue">
             <b>Get Started</b>
           </Button>
         </Link>
-        <h1>Welcome: {tok}</h1>
       </div>
-    </div>
+      <button className="mobile-menu-icon" onClick={() => setMob(!mob)}>
+          {mob ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+      </button>
+    </nav>
   );
 }
 

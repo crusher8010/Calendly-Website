@@ -1,0 +1,38 @@
+.main1{
+    display: flex;
+    /* border: 1px solid; */
+    position: absolute;
+    top:20px;
+    left: -650px;
+    color: #333;
+    background-color: white;
+    height: 80vh;
+    z-index: 2;
+}
+
+ .first1{
+    background-color: skyblue;
+    color: #fff;
+    width: 50vh;
+    padding: 20px;
+} 
+
+.second1{
+    width: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-left: 20px;
+}
+
+.temp1{
+    margin-top: 10px;
+}
+
+.temp1 ul{
+    list-style: none;
+}
+
+.temp1 ul li{
+    margin-top: 20px;
+}
