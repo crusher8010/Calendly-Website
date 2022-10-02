@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import {useState} from "react";
 import { Button} from "@chakra-ui/react";
 import { AuthContext } from "../Context/AuthContextProvider";
@@ -8,8 +8,16 @@ import Dropdown2 from "./Dropdown2";
 import "./Navbar.css"
 
 function Navbar() {
-  const { tok } = useContext(AuthContext);
+  const { tok, isAuth } = useContext(AuthContext);
   const [mob, setMob] = useState(false);
+
+  const handlelogin = () => {
+    isAuth = false;
+  }
+
+  if(!isAuth){
+    return <Navigate to="/login" />
+  }
 
   return (
     <nav className="struct">
@@ -28,7 +36,7 @@ function Navbar() {
         <Link to="/teams" className="Teams">
           <b>Teams</b>
         </Link>
-        <Link className="Enterprise">
+        <Link to="/enterprise" className="Enterprise">
           <b>Enterprise</b>
         </Link>
         <Link className="Products">
@@ -45,6 +53,7 @@ function Navbar() {
         <Link className="login" to="/login">
           <b>Log In</b>
         </Link>
+        <Link className="logout" onClick={handlelogin}><b>Log Out</b></Link>
         <Link to="/signup" className="Getstarted">
           <Button colorScheme="blue">
             <b>Get Started</b>

@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lay1{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.part1{
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid; */
+}
+
+.g1{
+    width: 40%;
+    margin-top: 80px;
+}
+
+.head1{
+    text-align: left;
+}
+
+.c1{
+    color: blue;
+}
+
+.g2 img{
+    width: 650px;
+    height: 500px;
+}
+
+.btn1{
+    font-size: 20px;
+}
+
+.lay2{
+    margin-top: 80px;
+}
+
+.part2{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.g3{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.g3 img{
+    width: 120px;
+    height: 100px;
+}
+
+.g5{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.g6{
+    display: flex;
+    justify-content: space-between;
+    gap: 58px;
+    /* margin-left: 10px; */
+}
+
+.jack1{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+}
+
+.ryu{
+    width: 50%;
+}
+
+.rose{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.rose img{
+    width: 30px;
+    height: 30px;
+}
+
+.head2{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.g4{
+    margin-top: 60px;
+}
+
+.lay3{
+    margin-top: 200px;
+}
+
+.part3{
+    width: 55%;
+    margin: auto;
+}
+
+.lay4{
+    width: 50%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.g7{
+    width: 600px;
+    height: 500px;
+}
+
+.g8{
+    width: 40%;
+    margin-top: 80px;
+    text-align: left;
+    padding: 10px;
+}
+
+.hit1{
+    color: blue;
+    font-size: 24px;
+    margin-top: 1rem;
+}
+
+.hit2{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.lay5{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.lay6{
+    margin-top: 120px;
+}
+
+.lay7{
+    width: 50%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.hit3{
+    margin-top: 40px;
+}
+
+.part4{
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+.part5{
+    width: 50%;
+}
+
+.g9 img{
+    width: 600px;
+    height: 500px;
+}
+
+.head3{
+    text-align: left;
+}
+
+.lay8{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.part6{
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+.g10{
+    width: 40%;
+    margin-top: 80px;
+    text-align: left;
+    padding: 10px;
+}
+
+.g11 img{
+    width: 600px;
+    height: 500px;
+}
+
+.lay9{ 
+    display: flex;
+    margin-top: 80px;
+    height: 600px;
+    /* border: 1px solid ; */
+}
+
+/* width: "25%", textAlign:"left", marginLeft:"100px" */
+
+.part7{
+    width: 25%;
+    text-align: left;
+    margin-left: 100px;
+    /* border: 1px solid; */
+}
+
+/* width: "70%", margin:"auto", display:"grid", gridTemplateColumns:"repeat(3, 1fr)", gap:"50px", marginLeft:"100px" */
+
+.part8{
+    width: 70%;
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-left: 100px;
+}
+
+/* style={{listStyle:"none", flex:"1 1 25%", flexDirection: "column", textAlign:"left"}} */
+
+.part9{
+    list-style: none;
+    flex: 1 1 25%;
+    flex-direction: column;
+    text-align: left;
+}
+
+.marquee{
+    margin-top: 40px;
+}
+
+.image-wrapper{
+    margin: 8px 30px;
+}
+
+.image-wrapper img{
+    height: 150px;
+    width: 120px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .part1{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .g1{
+        width: 100%;
+    }
+
+    .head1{
+        text-align: center;
+    }
+
+    .g2{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .part2{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .g3{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .part3{
+        width: 90%;
+        margin: auto;
+    }
+
+    .lay4{
+        width: 90%;
+        margin: auto;
+    }
+
+    .part4{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .lay7{
+        width: 90%;
+        margin: auto;
+        margin-top: 80px; 
+    }
+
+    .g8{
+        order: -1;
+        width: 90%;
+        margin: auto;
+    }
+
+    .g7{
+        width: 80%;
+        margin: auto;
+    }
+
+    .lay5{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .g9{
+        display: block;
+        margin: 0 auto;
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .part5{
+        width: 90%;
+        margin: auto;
+    }
+
+    .part6{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .g10{
+        width: 90%;
+        text-align: left;
+    }
+
+    .g5{
+        width: 100%;
+    }
+
+    .g6{
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        /* margin-left: 10px; */
+    }
+
+    .jack1{
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .ryu{
+        width: 100%;
+    }
+    
+    .lay4{
+        margin-top: 100px;
+    }
+
+    .g3{
+        margin-top: 70px;
+    }
+
+    .lay9{
+        flex-direction: column;
+    }
+
+    .part8{
+        width: 100%;
+        margin-top: 50px;
+        padding: auto;
+    }
+
+    .part7{
+        width: 100%;
+    }
+}

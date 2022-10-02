@@ -6,7 +6,7 @@
 
 .struct{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 80px;
 }
@@ -28,7 +28,7 @@
     padding-left: 15px;
 }
 
-.sym, .Individuals, .Teams, .Enterprise, .Products, .Pricing, .Resources, .login, .Getstarted{
+.sym, .Individuals, .Teams, .Enterprise, .Products, .Pricing, .Resources, .login, .Getstarted, .logout{
     cursor: pointer;
     font-size: 20px;
 }
@@ -65,9 +65,10 @@
         position: absolute;
         top: 75px;
         left: 0;
-        transition: all o.5s ease-out;
+        transition: all 0.5s ease-out;
         background-color: white;
         width: 100%;
+        z-index: 2;
     }
 
     .mobile-nav-links2{
@@ -77,12 +78,13 @@
         position: absolute;
         top: 374px;
         left: 0;
-        transition: all o.5s ease-out;
+        transition: all 0.5s ease-out;
         background-color: white;
         width: 100%;
+        z-index: 2;
     }
 
-    .Individuals, .Teams, .Enterprise, .Products, .Pricing, .Resources, .login, .Getstarted{
+    .Individuals, .Teams, .Enterprise, .Products, .Pricing, .Resources, .login, .logout, .Getstarted{
         text-align: center;
         padding: 10px;
         width: 90%;
